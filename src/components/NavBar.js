@@ -6,7 +6,7 @@ function NavBar() {
         <div>
             <nav className="navbar">
                 <div className="navbar__container">
-                    <a className="brand">Krypto Korner</a>
+                    <a className="navbar__brand">Krypto Korner</a>
                     <i className='fab fa-bitcoin'></i>
                     <ul className="navbar__links">
                         <li className="navbar__links__items">Home</li>

@@ -1,4 +1,6 @@
 .navbar {
+    background: black;
+    height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,4 +13,43 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+
+.navbar__brand {
+    color: white;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+.fa-bitcoin {
+    color: goldenrod;
+    margin-left: 0.5rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+.navbar__links {
+    color: white;
+    font-size: 1.5rem;
+    align-items: center;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    list-style: none;
+    text-align: center;
+    width: 700px;
+    justify-content: end;
+    margin-right: 2rem;
+}
+
+.navbar__links__items {
+    height: 80px;
+    align-items: center;
+    display: flex;
 }
