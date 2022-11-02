@@ -6,16 +6,16 @@ function NavBar() {
         <div>
             <nav className="navbar">
                 <div className="navbar__container">
-                    <a className="brand">Krypto Korner </a><i className="logo">put img here</i>
-                </div>
-                <div className="navbar__links">
-                    <ul className="navbar__links__menu">
-                        <li>Home</li>
-                        <li>NFTS</li>
-                        <li>KryptoKnowledge</li>
-                        <li>Subscribe</li>
+                    <a className="brand">Krypto Korner</a>
+                    <i className='fab fa-bitcoin'></i>
+                    <ul className="navbar__links">
+                        <li className="navbar__links__items">Home</li>
+                        <li className="navbar__links__items">NFTS</li>
+                        <li className="navbar__links__items">KryptoKnowledge</li>
+                        <li className="navbar__links__items">Subscribe</li>
                     </ul>
                 </div>
+
             </nav>
         </div>
     )
