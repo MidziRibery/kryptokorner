@@ -1,6 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HeroSection from './components/HeroSection';
 
 
 function App() {
@@ -12,9 +13,7 @@ function App() {
           <Route exact path='/' />
         </Routes> 
       </Router>
-
-      <h1>Test Clean Slate</h1>
- 
+      <HeroSection/>
     </div>
   );
 }

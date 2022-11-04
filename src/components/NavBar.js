@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import './NavBar.css';
+import Button from './Button.js';
 
 function NavBar() {
     return(
@@ -24,6 +25,7 @@ function NavBar() {
                             <Link to='/subscribe' className="navbar__links__item">Subscribe</Link>
                             </li>
                     </ul>
+                    <Button>Subscribe</Button>
                 </div>
 
             </nav>
