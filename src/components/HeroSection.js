@@ -1,5 +1,7 @@
 import React from 'react'
 import '../App.css';
+import Button from './Button';
+import './HeroSection.css';
 
 function HeroSection() {
   return (
@@ -7,6 +9,7 @@ function HeroSection() {
         <h1>KRYPTO KORNER</h1>
         <p>Your One-Stop Krypto Knowledge</p>
     </div>
+    
   )
 }
 
