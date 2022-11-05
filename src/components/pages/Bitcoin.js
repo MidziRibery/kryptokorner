@@ -5,13 +5,13 @@ import '../../App.css';
 
 
 function Bitcoin() {
-    const [movieTitle, setMovieTitle] = useState("star wars");
+    const [cryptoPrice, setCryptoPrice] = useState("");
 
     useEffect(() => {
-        const movieUrl = `https://www.omdbapi.com/?t=${movieTitle}&apikey=98e3fb1f`;
+        const cryptoUrl = `https://www.omdbapi.com/?t=${cryptoPrice}&apikey=98e3fb1f`;
       
         const makeApiCall = () => {
-          fetch(movieUrl)
+          fetch(cryptoUrl)
             .then((res) => res.json())
             .then((data) => {
               console.log("movieData", data);
