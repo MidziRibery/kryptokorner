@@ -19,10 +19,7 @@ function NavBar() {
                             <Link to='/nfts' className="navbar__links__item">NFTS</Link>
                             </li>
                         <li className="navbar__links__items">
-                            <Link to='/kryptoknowledge' className="navbar__links__item">KryptoKnowledge</Link>
-                            </li>
-                        <li className="navbar__links__items">
-                            <Link to='/subscribe' className="navbar__links__item">Subscribe</Link>
+                            <Link to='/knowledge' className="navbar__links__item">KryptoKnowledge</Link>
                             </li>
                     </ul>
                     <Button>Subscribe</Button>
