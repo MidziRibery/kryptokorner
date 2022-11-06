@@ -6,6 +6,7 @@ import NFT from './components/pages/NFT';
 import KryptoKnowledge from './components/pages/KryptoKnowledge';
 import Subscribe from './components/pages/Subscribe';
 import Bitcoin from './components/pages/Bitcoin';
+import Ethereum from './components/pages/Ethereum';
 
 
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/knowledge' element= {<KryptoKnowledge/>}/>
           <Route exact path='/subscribe' element= {<Subscribe/>}/>
           <Route exact path='/bitcoin' element= {<Bitcoin/>}/>
+          <Route exact path='/ethereum' element= {<Ethereum/>}/>
         </Routes> 
       </Router>
       
