@@ -2,21 +2,31 @@
 import React, {useEffect, useState} from 'react'
 
 //define the URL
-const apiURL = 'https://api.chucknorris.io/jokes/random'
+const apiURL = 'https://corsanywhere.herokuapp.com/https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=5000&convert=USD'
 
 function Ethereum() {
 
-    const [currJoke, setCurrJoke] = useState('');
+    const [currPrice, setCurrPrice] = useState('');
 
 
     // make function to call the API
     const makeApiCall = async () => {
-       const res = await fetch(`${apiURL}`) // we get a promise in the form of JSON response 
+    const res = await fetch(`${apiURL}`, {
+      headers: {
+    'X-CMC_PRO_API_KEY': `${process.env.REACT_APP_CMC_API}`,
+    } 
+  })
+
        console.log('here')
        console.log(res);
        const json = await res.json() // to get the object in API
-       console.log(json.value) // here we get the joke
-       setCurrJoke(json.value); // use state to set the currJoke
+       console.log('this is the data')
+       console.log(json.data) // here we get the joke
+       console.log('this is my attempt to get the price')
+       console.log(json.data[0].quote.USD.price)
+       let oriPrice = json.data[0].quote.USD.price
+       let price = parseFloat(oriPrice.toFixed(2));
+       setCurrPrice(price); // use state to set the currJoke
     }
 
     useEffect( ()=>{
@@ -27,7 +37,7 @@ function Ethereum() {
   return (
     <div>
         <h1>Ethereum</h1>
-        <h2>{currJoke}</h2>
+        <h2>Current Price: ${currPrice}</h2>
     </div>
   )
 }
