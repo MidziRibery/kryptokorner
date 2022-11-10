@@ -3,7 +3,7 @@ import React from 'react'
 function BAYC() {
   return (
     <div>
-        <h1>I want this to appear pls hahah</h1>
+        <h1>Alhamdulillah this is appearing</h1>
     </div>
   )
 }
