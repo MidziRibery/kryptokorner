@@ -5,25 +5,21 @@ import './Cards.css';
 
 function NFTCards(props) {
 
-  const cardsOnClick = () => {
-    const card = {};
-  }
-
   return (
     <div className='cards' >
         <h1>Types of NFTS</h1>
         <div className='cards__container'>
             <div className='cards__wrapper'>
                 <ul className='cards__item'>
-                    <CardItem
-                    onClick={cardsOnClick} 
+                  <div onClick={()=>{props.cardsOnClick("Bored Ape Yatch Club (BAYC)")}}>
+                    <CardItem                  
                     // on click, i want it to set DisplayCard.js to a page which
                     //displays more information about the card
                     src='https://img.seadn.io/files/7e10d61f5202d9c7cd7634eb495d31ff.png?fit=max&w=1000'
                     text='Bored Ape Yatch Club (BAYC)'
-                    label='BAYC'
-                    path={cardsOnClick} 
+                    label='BAYC' 
                     />
+                  </div>
                     <CardItem 
                     src='https://images.jpgstoreapis.com/QmP1quFyKADvAm31ntMCpNYN5fUbpKg1FK7XGRSXtB5jNi600x'
                     text='The first interactive NFT, exclusive on the Cardano Chain.'
