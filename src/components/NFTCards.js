@@ -1,7 +1,8 @@
 import React from 'react'
 import CardItem from './CardItem'
 import './Cards.css';
-import BAYC from './pages/BAYC';
+import BAYC from './miniPages/BAYC';
+import DeadPxlz from './miniPages/DeadPxlz';
 
 
 function NFTCards(props) {
@@ -26,7 +27,7 @@ function NFTCards(props) {
                     path={cardsOnClick} 
                     />
                     </div>
-                    <div onClick={()=>{props.cardsOnClick('Dead PXLZ')}}>
+                    <div onClick={()=>{props.cardsOnClick(<DeadPxlz/>)}}>
                     <CardItem 
                     src='https://images.jpgstoreapis.com/QmP1quFyKADvAm31ntMCpNYN5fUbpKg1FK7XGRSXtB5jNi600x'
                     text='The first interactive NFT, exclusive on the Cardano Chain.'
