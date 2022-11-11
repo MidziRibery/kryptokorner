@@ -91,11 +91,13 @@
   
   .cards__item__info {
     padding: 20px 30px 30px;
+    margin: 20px;
   }
   
   .cards__item__text {
     color: #252e48;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 24px;
+    padding: inherit;
   }
   

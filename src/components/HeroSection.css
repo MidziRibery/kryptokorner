@@ -12,6 +12,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    object-fit: contain;
 }
 
 .hero-container > h1 {
@@ -28,7 +29,7 @@ video {
     color: whitesmoke;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
-    font-size: 32px;
+    font-size: 40px;
     margin-top: 8px;
     text-align: center;
 }
