@@ -22,7 +22,7 @@ function NavBar() {
                             <Link to='/knowledge' className="navbar__links__item">KryptoKnowledge</Link>
                             </li>
                     </ul>
-                    <Button>Subscribe</Button>
+                    <Button className="myButton">Subscribe</Button>
                 </div>
 
             </nav>

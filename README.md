@@ -1,70 +1,29 @@
-# Getting Started with Create React App
+# Krypto Korner App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A client-based app for getting the latest information (real time price) and to understand the basics of cryptocurrencies and NFTs (Non Fungible Tokens).
 
-## Available Scripts
+## Background
 
-In the project directory, you can run:
+The world of crypto is not only vast, but changing on a daily basis! With so many information out there, it is easy for someone new to get lost with all these everchanging information bombarding you!
 
-### `npm start`
+This app aims to simplify and introduce new crypto users to back to basic concepts of the whole crypto space.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+It will introduce users to the cryptocurrency that started it all (Bitcoin), the technology behind it, and the early cryptocurrencies who built on the technology to incorporate and improve how traditional finances (TradFi) works.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This app will also share the basic concept of what an NFT is, and why it is valued at such high prices.
 
-### `npm test`
+Therefore, it will be broken down into 3 simple sections:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Sharing of 5 cryptocurrencies that one has to know and understand if they are to dwell further into the space.
+2. Some basic sharing of the top NFTs in their own cyrptocurrency environment.
+3. Other cryptocurrencies basic knowledge.
 
-### `npm run build`
+## How it works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All data is managed locally in your browser by the app except for the price fetching.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The app communicates with external sources is when you perform a search for prices by clicking on the cryptocurrency — the app will fetch relevant data from the Library API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Library API](https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=5000&convert=USD)
