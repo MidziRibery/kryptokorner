@@ -22,8 +22,8 @@ Therefore, it will be broken down into 3 simple sections:
 
 All data is managed locally in your browser by the app except for the price fetching.
 
-The app communicates with external sources is when you perform a search for prices by clicking on the cryptocurrency — the app will fetch relevant data from the Library API.
+The app communicates with external sources is when you perform a search for prices by clicking on the cryptocurrency — the app will fetch relevant data from the Coin Market Cap API.
 
 ## Dependencies
 
-- [Library API](https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=5000&convert=USD)
+- [Coin Market Cap API](https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest?start=1&limit=5000&convert=USD)
